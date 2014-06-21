@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+	<form>
+		<input type="button" value="Back" id="backButton" /> <br>
+		<input type="button" value="Forward" id="ForwardButton" /> <br>
+		
+	</form>
+	<script>
+		var bb = document.getElementById("backButton");
+		var ff = document.getElementById("forwardButton");
+		bb.onclick = function(){
+			history.back();
+			window.alert("history = "+history.length);
+		}
+		ff.onclick = function(){
+			history.forward();
+		}
+	
+	</script>
+	</body>
+</html>
